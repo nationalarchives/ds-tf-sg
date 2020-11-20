@@ -8,7 +8,7 @@ variable "ingress" {
         from_port   = number
         to_port     = number
         protocol    = string
-        cidr_blocks
+        cidr_blocks = string
     }))
 }
 variable "egress" {
@@ -17,7 +17,7 @@ variable "egress" {
         from_port   = number
         to_port     = number
         protocol    = string
-        cidr_blocks
+        cidr_blocks = string
     }))
 }
 
