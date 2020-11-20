@@ -2,24 +2,8 @@ variable "name" {}
 variable "description" {}
 variable "vpc_id" {}
 
-variable "ingress" {
-    type = list(object({
-        description = string
-        from_port   = number
-        to_port     = number
-        protocol    = string
-        cidr_blocks = string
-    }))
-}
-variable "egress" {
-    type = list(object({
-        description = string
-        from_port   = number
-        to_port     = number
-        protocol    = string
-        cidr_blocks = string
-    }))
-}
+variable "ingress" {}
+variable "egress" {}
 
 variable "tags" {
     type = list(object({
